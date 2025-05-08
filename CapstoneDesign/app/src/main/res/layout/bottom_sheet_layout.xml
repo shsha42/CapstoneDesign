@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="위치 공유할 친구 선택"
+        android:textSize="18sp"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#474747"
+        android:paddingBottom="10dp"/>
+
+    <!-- 스크롤 가능한 영역: 친구 목록 -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <RadioGroup
+            android:id="@+id/friend_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/friend1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:buttonTint="@color/main"
+                android:paddingStart="5dp"
+                android:textSize="15dp"
+                android:textColor="@color/gray"
+                android:text="신짱구" />
+
+            <RadioButton
+                android:id="@+id/friend2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:buttonTint="@color/main"
+                android:paddingStart="5dp"
+                android:textSize="15dp"
+                android:textColor="@color/gray"
+                android:text="신짱아" />
+
+            <RadioButton
+                android:id="@+id/friend3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:buttonTint="@color/main"
+                android:paddingStart="5dp"
+                android:textSize="15dp"
+                android:textColor="@color/gray"
+                android:text="흰둥이" />
+
+            <RadioButton
+                android:id="@+id/friend4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:buttonTint="@color/main"
+                android:paddingStart="5dp"
+                android:textSize="15dp"
+                android:textColor="@color/gray"
+                android:text="훈이" />
+
+            <RadioButton
+                android:id="@+id/friend5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:buttonTint="@color/main"
+                android:paddingStart="5dp"
+                android:textSize="15dp"
+                android:textColor="@color/gray"
+                android:text="맹구" />
+
+            <RadioButton
+                android:id="@+id/friend6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:buttonTint="@color/main"
+                android:paddingStart="5dp"
+                android:textSize="15dp"
+                android:textColor="@color/gray"
+                android:text="철수" />
+
+            <RadioButton
+                android:id="@+id/friend7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:buttonTint="@color/main"
+                android:paddingStart="5dp"
+                android:textSize="15dp"
+                android:textColor="@color/gray"
+                android:text="유리" />
+
+            <!-- 다른 친구들을 위한 버튼 추가 -->
+
+        </RadioGroup>
+    </ScrollView>
+
+    <!-- 공유 버튼: 스크롤되지 않도록 하단에 고정 -->
+    <Button
+        android:id="@+id/share_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="공유"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/main"/>
+
+</LinearLayout>

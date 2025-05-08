@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Zibro</string>
+    <string name="map_view_description">This is a map view displaying the current location.</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="signup">회원가입</string>
+    <string name="general_setting">기본 설정</string>
+    <string name="aa">aa</string>
+
+    <!-- 사용자 이름과 현재 위치를 정의합니다. -->
+    <string name="user_name">사용자</string>
+    <string name="current_location">현재 위치</string>
+
+    <!-- 알림 메시지 포맷 -->
+    <string name="departure_message">%1$s님이 %2$s에서 출발하였습니다.</string>
+
+    <!-- activity_noti text -->
+    <string name="views">알림</string>
+    <string name="subscriber">공지사항</string>
+
+</resources>

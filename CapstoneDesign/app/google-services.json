@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "988389193051",
+    "project_id": "main-c34bd",
+    "storage_bucket": "main-c34bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:988389193051:android:af45b6e6263e98f87d567e",
+        "android_client_info": {
+          "package_name": "com.codebly.zibro"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAZ7EqGkX7TJuNwfKzDFPepmI1Rn0eumI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

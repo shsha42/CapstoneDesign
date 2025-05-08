@@ -1,0 +1,53 @@
+[versions]
+agp = "8.5.1"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+activity = "1.9.2"
+constraintlayout = "2.1.4"
+annotation = "1.8.2"
+lifecycleLivedataKtx = "2.8.5"
+lifecycleViewmodelKtx = "2.8.5"
+googleMaps = "18.0.2"
+places = "3.1.0"
+play_services_location = "21.0.1"  # Google Play Services Location의 버전 정의
+gms-location = "21.0.1"
+okhttp = "4.9.3"
+android-maps-utils = "2.2.3"
+cardview = "1.0.0"
+recyclerview = "1.2.1"
+gson = "2.8.9"
+firebase-bom = "33.3.0"
+firebase-analytics = "24.0.0"
+firebase-auth = "21.0.1"
+firebase-firestore = "24.0.0"
+
+[libraries]
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebase-bom" }
+firebase-analytics = { module = "com.google.firebase:firebase-analytics" }
+firebase-auth = { module = "com.google.firebase:firebase-auth", version.ref = "firebase-auth" }
+firebase-firestore = { module = "com.google.firebase:firebase-firestore", version.ref = "firebase-firestore" }
+androidx-recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerview" }
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+annotation = { group = "androidx.annotation", name = "annotation", version.ref = "annotation" }
+lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycleLivedataKtx" }
+lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
+google-maps = { module = "com.google.android.gms:play-services-maps", version.ref = "googleMaps" }
+google-places = { module = "com.google.android.libraries.places:places", version.ref = "places" }
+play-services-location = { module = "com.google.android.gms:play-services-location", version.ref = "play_services_location" }
+google-location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "gms-location" }
+okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
+google-maps-utils = { group = "com.google.maps.android", name = "android-maps-utils", version.ref = "android-maps-utils" }
+androidx-cardview = { group = "androidx.cardview", name = "cardview", version.ref = "cardview" }
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+

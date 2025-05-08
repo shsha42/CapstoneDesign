@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Zibro"
+        tools:targetApi="31"
+        tools:replace="android:appComponentFactory"
+        android:appComponentFactory="whateverString">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/api_key"/>
+
+
+        <activity
+            android:name=".view.login.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.home.menu.friends.FriendPageActivity" />
+        <activity android:name=".view.home.menu.friends.FriendsActivity" />
+        <activity android:name=".view.home.menu.friends.AlterFriendsActivity" />
+        <activity android:name=".view.login.SignUpActivity" />
+        <activity android:name=".view.home.general.GeneralBirthDateActivity" />
+        <activity android:name=".view.home.general.GeneralGenderActivity" />
+        <activity android:name=".view.home.general.GeneralHomeLocationActivity" />
+        <activity android:name=".view.home.general.GeneralNameActivity" />
+        <activity android:name=".view.home.menu.alarm.AlarmActivity" />
+        <activity android:name=".view.home.menu.customerservice.CustomerServiceActivity" />
+        <activity android:name=".view.home.menu.friends.SearchFriendActivity" />
+        <activity android:name=".view.home.menu.mypage.MyPageActivity"/>
+        <activity android:name=".view.home.menu.myplace.MyPlaceActivity"/>
+        <activity android:name=".view.home.HomeActivity"/>
+        <!-- Noti Activity -->
+        <activity
+            android:name=".view.home.menu.alarm.NotiActivity"
+            android:exported="false" />
+
+        <!-- sosbutton Activity (중복된 항목 제거됨) -->
+        <activity
+            android:name=".view.home.sos.sosbuttton"
+            android:exported="false" />
+
+
+        <service
+            android:name=".view.home.CountdownService"
+            android:foregroundServiceType="dataSync"
+            android:enabled="true"
+            android:exported="false"/>
+
+    </application>
+
+</manifest>
